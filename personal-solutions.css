@@ -74,3 +74,47 @@
     border-radius: 20px;
     filter: saturate(0.2) sepia(0.8);
 }
+
+.ex-10-icon {
+    font-size: 60px;
+    position: relative;
+    animation: caricamento 1s linear infinite;
+}
+
+@keyframes caricamento {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.ex-11-icon {
+    font-size: 60px;
+}
+
+.ex-11-icon:hover {
+    position: relative;
+    animation: caricamento-mezzo 1s linear;
+}
+
+
+@keyframes caricamento-mezzo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
