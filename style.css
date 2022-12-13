@@ -140,6 +140,43 @@
     height: 20px;
 }
 
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: tasto-up 3s linear;
+}
+
+@keyframes tasto-up {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: calc(100% - 60px);
+    }
+
+    0% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: tasto-down 3s linear;
+}
+
+@keyframes tasto-down {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    0% {
+        right: 20%;
+    }
+}
+
 .ex-10-icon {
     font-size: 60px;
     position: relative;
